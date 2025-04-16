@@ -1,6 +1,6 @@
 {
   "name": "rn-bouncy-checkbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customizable and animated select component for React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,12 @@
     "commit": "npx git-cz",
     "build": "tsc"
   },
-  "keywords": ["checkbox", "reanimated", "component", "react-native"],
+  "keywords": [
+    "checkbox",
+    "reanimated",
+    "component",
+    "react-native"
+  ],
   "author": "Dhia Ben Hamouda",
   "license": "ISC",
   "peerDependencies": {
