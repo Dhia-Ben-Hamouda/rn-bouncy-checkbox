@@ -2,7 +2,7 @@
 
 A customizable and animated checkbox component for React Native, built with **React Native Reanimated** and **React Native SVG**.
 
----
+## ![Alt text](https://github.com/Dhia-Ben-Hamouda/rn-bouncy-checkbox/blob/main/src/assets/preview.gif)
 
 ## ✨ Features
 
@@ -18,15 +18,11 @@ A customizable and animated checkbox component for React Native, built with **Re
 
 ```bash
 npm install rn-bouncy-checkbox
-```
-
-or
-
-```bash
+# or
 yarn add rn-bouncy-checkbox
 ```
 
-> Make sure to install peer dependencies:
+Then install the required peer dependencies:
 
 ```bash
 npm install react-native-reanimated react-native-svg
@@ -45,12 +41,11 @@ export default function App() {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <View style={{ padding: 20 }}>
+    <View>
       <Checkbox
         isChecked={isChecked}
         onChange={setIsChecked}
         label="Accept Terms"
-        color="#6200EE"
       />
     </View>
   );
