@@ -34,6 +34,7 @@ interface ICheckbox {
   label?: string;
   color?: string;
   checkColor?: string;
+  customCheckIcon?: React.ReactNode;
   containerStyle?: StyleProp<ViewStyle>;
   boxStyle?: StyleProp<ViewStyle>;
   labelStyle?: StyleProp<TextStyle>;
@@ -46,6 +47,7 @@ export default function Checkbox({
   label,
   color = "#555",
   checkColor = "#fff",
+  customCheckIcon,
   containerStyle,
   boxStyle,
   labelStyle,
@@ -87,7 +89,7 @@ export default function Checkbox({
       <View style={[styles.container, containerStyle]}>
         <Animated.View style={[styles.checkbox, boxStyle, animatedStyle]}>
           <Animated.View style={iconStyle}>
-            <Check color={checkColor} size={size} />
+            {customCheckIcon ?? <Check color={checkColor} size={size} />}
           </Animated.View>
         </Animated.View>
         {label && <Text style={[styles.label, labelStyle]}>{label}</Text>}

@@ -46,7 +46,7 @@ function Check({ size = 20, color }) {
       <react_native_svg_1.Path fill={color} d="M173.9 439.4l-166.4-166.4c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.7 432.1 72.6c10-10 26.2-10 36.2 0l36.2 36.2c10 10 10 26.2 0 36.2l-294.4 294.4c-10 10-26.2 10-36.2 0z"/>
     </react_native_svg_1.default>);
 }
-function Checkbox({ isChecked, onChange, size = 20, label, color = "#555", checkColor = "#fff", containerStyle, boxStyle, labelStyle, }) {
+function Checkbox({ isChecked, onChange, size = 20, label, color = "#555", checkColor = "#fff", customCheckIcon, containerStyle, boxStyle, labelStyle, }) {
     const scale = (0, react_native_reanimated_1.useSharedValue)(1);
     const backgroundColor = (0, react_native_reanimated_1.useSharedValue)(isChecked ? color : "transparent");
     const iconOpacity = (0, react_native_reanimated_1.useSharedValue)(isChecked ? 1 : 0);
@@ -73,7 +73,7 @@ function Checkbox({ isChecked, onChange, size = 20, label, color = "#555", check
       <react_native_1.View style={[styles.container, containerStyle]}>
         <react_native_reanimated_1.default.View style={[styles.checkbox, boxStyle, animatedStyle]}>
           <react_native_reanimated_1.default.View style={iconStyle}>
-            <Check color={checkColor} size={size}/>
+            {customCheckIcon !== null && customCheckIcon !== void 0 ? customCheckIcon : <Check color={checkColor} size={size}/>}
           </react_native_reanimated_1.default.View>
         </react_native_reanimated_1.default.View>
         {label && <react_native_1.Text style={[styles.label, labelStyle]}>{label}</react_native_1.Text>}

@@ -56,17 +56,18 @@ export default function App() {
 
 ## 🔧 Props
 
-| Prop             | Type                       | Default      | Description                                             |
-| ---------------- | -------------------------- | ------------ | ------------------------------------------------------- |
-| `isChecked`      | `boolean`                  | **required** | Whether the checkbox is currently checked               |
-| `onChange`       | `(value: boolean) => void` | **required** | Callback when the checkbox is toggled                   |
-| `size`           | `number`                   | `20`         | Size of the checkbox (width and height)                 |
-| `label`          | `string`                   | `undefined`  | Optional label text displayed next to the checkbox      |
-| `color`          | `string`                   | `#555`       | Checkbox background and border color                    |
-| `checkColor`     | `string`                   | `#fff`       | Color of the checkmark icon                             |
-| `containerStyle` | `StyleProp<ViewStyle>`     | `undefined`  | Custom style for the outer container (checkbox + label) |
-| `boxStyle`       | `StyleProp<ViewStyle>`     | `undefined`  | Custom style for the checkbox box                       |
-| `labelStyle`     | `StyleProp<TextStyle>`     | `undefined`  | Custom style for the label text                         |
+| Prop              | Type                       | Default      | Description                                             |
+| ----------------- | -------------------------- | ------------ | ------------------------------------------------------- |
+| `isChecked`       | `boolean`                  | **required** | Whether the checkbox is currently checked               |
+| `onChange`        | `(value: boolean) => void` | **required** | Callback when the checkbox is toggled                   |
+| `size`            | `number`                   | `20`         | Size of the checkbox (width and height)                 |
+| `label`           | `string`                   | `undefined`  | Optional label text displayed next to the checkbox      |
+| `color`           | `string`                   | `#555`       | Checkbox background and border color                    |
+| `checkColor`      | `string`                   | `#fff`       | Color of the checkmark icon                             |
+| `containerStyle`  | `StyleProp<ViewStyle>`     | `undefined`  | Custom style for the outer container (checkbox + label) |
+| `boxStyle`        | `StyleProp<ViewStyle>`     | `undefined`  | Custom style for the checkbox box                       |
+| `labelStyle`      | `StyleProp<TextStyle>`     | `undefined`  | Custom style for the label text                         |
+| `customCheckIcon` | `ReactNode`                | `undefined`  | Custom checkbox check icon                              |
 
 ---
 

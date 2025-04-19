@@ -7,9 +7,10 @@ interface ICheckbox {
     label?: string;
     color?: string;
     checkColor?: string;
+    customCheckIcon?: React.ReactNode;
     containerStyle?: StyleProp<ViewStyle>;
     boxStyle?: StyleProp<ViewStyle>;
     labelStyle?: StyleProp<TextStyle>;
 }
-export default function Checkbox({ isChecked, onChange, size, label, color, checkColor, containerStyle, boxStyle, labelStyle, }: ICheckbox): React.JSX.Element;
+export default function Checkbox({ isChecked, onChange, size, label, color, checkColor, customCheckIcon, containerStyle, boxStyle, labelStyle, }: ICheckbox): React.JSX.Element;
 export {};
