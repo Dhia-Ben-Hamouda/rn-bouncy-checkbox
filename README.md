@@ -45,7 +45,7 @@ export default function App() {
       <Checkbox
         isChecked={isChecked}
         onChange={setIsChecked}
-        label="Accept Terms"
+        label="I have read the terms and conditions"
       />
     </View>
   );

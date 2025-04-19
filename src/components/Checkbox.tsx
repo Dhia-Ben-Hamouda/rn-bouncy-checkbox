@@ -112,7 +112,6 @@ const styles = StyleSheet.create({
     marginLeft: 8,
     fontSize: 16,
     color: "#555",
-    minHeight: 19,
   },
   pressable: {
     alignSelf: "flex-start",
